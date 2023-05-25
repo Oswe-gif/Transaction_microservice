@@ -24,13 +24,4 @@ jobs:
         uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
         with:
           arguments: build
-      - uses: mr-smithers-excellent/docker-build-push@v6
-          name: Build & push Docker image
-          with:
-            image: oswe/transaccional
-            tags: v1, latest
-            registry: docker.io
-            dockerfile: ./Dockerfile
-            username: oswe
-            password: Pinkfloyd22.
 
