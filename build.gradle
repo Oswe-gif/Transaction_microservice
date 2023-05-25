@@ -3,6 +3,7 @@ plugins {
 	id 'org.springframework.boot' version '3.0.4'
 	id 'io.spring.dependency-management' version '1.1.0'
 	id 'jacoco'
+	id 'maven-publish'
 }
 
 group = 'com.example'
@@ -52,5 +53,12 @@ jacocoTestReport {
 		xml.required = false
 		csv.required = false
 		html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+	}
+}
+publishing {
+	publications {
+		maven(MavenPublication) {
+			from components.java
+		}
 	}
 }
