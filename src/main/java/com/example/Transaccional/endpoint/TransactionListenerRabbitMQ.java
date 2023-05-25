@@ -4,6 +4,7 @@ import com.example.Transaccional.endpoint.dto.DepositMoneyUserDto;
 import com.example.Transaccional.endpoint.dto.TransactionDto;
 import com.example.Transaccional.service.TransactionalService;
 import lombok.AllArgsConstructor;
+import lombok.Generated;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
@@ -12,6 +13,7 @@ import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 
 @Component
+@Generated
 @AllArgsConstructor
 public class TransactionListenerRabbitMQ {
     private TransactionalService transactionalService;
