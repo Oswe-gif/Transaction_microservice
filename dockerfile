@@ -1,6 +1,3 @@
 FROM openjdk
-
-WORKDIR /parcial2-arquitectura
-COPY src .
-
-CMD apachectl -D FOREGROUND
+COPY ./build/libs/Transaccional-0.0.1-SNAPSHOT.jar example.jar
+CMD sleep 5 && java -jar example.jar
