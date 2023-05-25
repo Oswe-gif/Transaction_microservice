@@ -29,7 +29,9 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	runtimeOnly 'com.h2database:h2'
-
+	implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.15.0'
+	implementation 'org.springframework.amqp:spring-rabbit:3.0.1'
+	testImplementation 'org.springframework.amqp:spring-rabbit-test'
 }
 
 tasks.named('test') {

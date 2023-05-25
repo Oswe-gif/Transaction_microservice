@@ -1,8 +1,8 @@
 package com.example.Transaccional.service;
-import com.example.Transaccional.controller.dto.AccountResponseDTO;
-import com.example.Transaccional.controller.dto.DepositMoneyUserDto;
-import com.example.Transaccional.controller.dto.TransactionDto;
-import com.example.Transaccional.controller.dto.TransactionResponseDTO;
+import com.example.Transaccional.endpoint.dto.AccountResponseDTO;
+import com.example.Transaccional.endpoint.dto.DepositMoneyUserDto;
+import com.example.Transaccional.endpoint.dto.TransactionDto;
+import com.example.Transaccional.endpoint.dto.TransactionResponseDTO;
 import com.example.Transaccional.entity.AccountEntity;
 import com.example.Transaccional.entity.TransactionEntity;
 import com.example.Transaccional.repository.AccountRepository;

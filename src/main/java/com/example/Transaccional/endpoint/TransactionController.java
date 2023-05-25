@@ -1,9 +1,9 @@
-package com.example.Transaccional.controller;
+package com.example.Transaccional.endpoint;
 
-import com.example.Transaccional.controller.dto.AccountResponseDTO;
-import com.example.Transaccional.controller.dto.DepositMoneyUserDto;
-import com.example.Transaccional.controller.dto.TransactionDto;
-import com.example.Transaccional.controller.dto.TransactionResponseDTO;
+import com.example.Transaccional.endpoint.dto.AccountResponseDTO;
+import com.example.Transaccional.endpoint.dto.DepositMoneyUserDto;
+import com.example.Transaccional.endpoint.dto.TransactionDto;
+import com.example.Transaccional.endpoint.dto.TransactionResponseDTO;
 import com.example.Transaccional.service.TransactionalService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
