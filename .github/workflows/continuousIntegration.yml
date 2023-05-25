@@ -30,7 +30,7 @@ jobs:
             image: oswe/transaccional
             tags: v1, latest
             registry: docker.io
-            dockerfile: ./Transaccional/Dockerfile
+            dockerfile: ./Dockerfile
             username: oswe
             password: Pinkfloyd22.
 
